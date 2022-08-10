@@ -6,7 +6,7 @@ package app
 // no external pakages should be important here
 
 import (
-	"github.com/henryikoh/backend-arch/pkg/models"
+	"github.com/techierishi/gowebapi/pkg/models"
 )
 
 func NumberofMovies(movies models.Movies) (number int32) {

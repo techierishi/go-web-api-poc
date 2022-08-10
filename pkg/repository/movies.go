@@ -1,8 +1,8 @@
 // This is where all things concercing data would be placed
-package repositery
+package repository
 
 import (
-	"github.com/henryikoh/backend-arch/pkg/models"
+	"github.com/techierishi/gowebapi/pkg/models"
 )
 
 // interface for calling the data. You can add or remove as much interfaces as you like

@@ -9,8 +9,8 @@ package services
 // The service might have a main file to initialize all the services its currently implemented individually
 
 import (
-	"github.com/henryikoh/backend-arch/pkg/app"
-	"github.com/henryikoh/backend-arch/pkg/repositery"
+	"github.com/techierishi/gowebapi/pkg/app"
+	"github.com/techierishi/gowebapi/pkg/repository"
 )
 
 // the service accepts the DAO to allow it communicate with the database
@@ -18,13 +18,13 @@ import (
 
 // check mailer as an example
 type Movies struct {
-	db repositery.DAO
+	db repository.DAO
 	// the mailer service can be an interface that impliments bacis email jobs and it can be used along side the movies service to send emails
 	// mailer mailerService
 }
 
 // New serve is used to created the server and also assign the routes the the router
-func MovieService(doa repositery.DAO) *Movies {
+func MovieService(doa repository.DAO) *Movies {
 
 	s := &Movies{
 		// other server variables can also be set here.

@@ -1,9 +1,9 @@
-package myhttp
+package routes
 
 import (
 	"net/http"
 
-	"github.com/henryikoh/backend-arch/pkg/services"
+	"github.com/techierishi/gowebapi/pkg/services"
 )
 
 // its important realise this is a closure pattern, what this means is anything decleared before the turn is persisted

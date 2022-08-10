@@ -1,4 +1,4 @@
-module github.com/henryikoh/backend-arch
+module github.com/techierishi/gowebapi
 
 go 1.17
 

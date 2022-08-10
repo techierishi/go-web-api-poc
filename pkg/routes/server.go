@@ -5,18 +5,18 @@
 	All the handler functions are attached to the server this makes it easier to share dependecies and also
 	keeps evethings in one place. Like middlewares and helpers. see example below
 
-	could also be named rest handlers or myhttp or routes
+	could also be named rest handlers or routes or routes
 */
 
-// this was orginially named "handlers" but I changed the name to "myhttp" as I feel this might be more descriptive
-package myhttp
+// this was orginially named "handlers" but I changed the name to "routes" as I feel this might be more descriptive
+package routes
 
 import (
 	"encoding/json"
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/henryikoh/backend-arch/pkg/repositery"
+	"github.com/techierishi/gowebapi/pkg/repository"
 )
 
 /*
@@ -33,11 +33,11 @@ type Server struct {
 	router *http.ServeMux
 
 	// db would contain the current database ( its currently being used to instansiate the Movies repo )
-	db repositery.DAO
+	db repository.DAO
 }
 
 // New serve is used to created the server and also assign the routes the the router
-func NewServer(doa repositery.DAO) *Server {
+func NewServer(doa repository.DAO) *Server {
 	// http.NewServeMux().router.
 	s := &Server{
 		// other server variables can also be set here. Check serve struck docs for more info

@@ -1,4 +1,4 @@
-package repositery
+package repository
 
 // interface for the repo/database there would be various types of queries based on your
 // usecase I just implimented one.
